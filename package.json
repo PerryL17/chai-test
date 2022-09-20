@@ -4,15 +4,19 @@
   "description": "tutorial for testing with Chai",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'Error, no test is defined'",
+    "test": "mocha tests/*.js --exit",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2"
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "express": "^4.17.2",
+    "zombie": "^6.1.4"
   },
   "devDependencies": {
+    "mocha": "^10.0.0",
     "nodemon": "^2.0.15"
   }
 }
